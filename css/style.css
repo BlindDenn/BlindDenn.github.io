@@ -2588,8 +2588,8 @@ button,
     width: unset;
     -ms-grid-columns: 138fr 186px 30fr 324fr;
     grid-template-columns: 138fr 186px 30fr 324fr;
-    -ms-grid-rows: 50px auto auto 61px 105px;
-    grid-template-rows: 50px auto auto 61px 105px;
+    -ms-grid-rows: 50px auto auto minmax(61px, auto) 105px;
+    grid-template-rows: 50px auto auto minmax(61px, auto) 105px;
   }
 }
 @media (max-width: 767px) {
@@ -2597,8 +2597,8 @@ button,
     width: 100%;
     -ms-grid-columns: 1fr 76px 214px 1fr;
     grid-template-columns: 1fr 76px 214px 1fr;
-    -ms-grid-rows: 8px auto auto 63px 78px;
-    grid-template-rows: 8px auto auto 63px 78px;
+    -ms-grid-rows: 8px auto auto minmax(63px, auto) 78px;
+    grid-template-rows: 8px auto auto minmax(63px, auto) 78px;
   }
 }
 
@@ -3415,16 +3415,16 @@ button,
   .subscription {
     -webkit-padding-before: 100px;
             padding-block-start: 100px;
-    -webkit-padding-after: 103px;
-            padding-block-end: 103px;
+    -webkit-padding-after: 99px;
+            padding-block-end: 99px;
   }
 }
 @media (max-width: 767px) {
   .subscription {
     -webkit-padding-before: 71px;
             padding-block-start: 71px;
-    -webkit-padding-after: 67px;
-            padding-block-end: 67px;
+    -webkit-padding-after: 71px;
+            padding-block-end: 71px;
   }
 }
 
@@ -3497,15 +3497,18 @@ button,
 @media (max-width: 1199px) {
   .subscription__controls {
     gap: 54px;
+    margin-bottom: 45px;
   }
 }
 @media (max-width: 767px) {
   .subscription__controls {
+    max-width: unset;
     width: 100%;
     gap: unset;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    margin-bottom: 35px;
   }
 }
 .subscription__controls::after {
@@ -3530,6 +3533,10 @@ button,
   font-weight: 400;
   line-height: 30px;
   opacity: 0.5;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 @media (max-width: 1199px) {
   .subscription__control {
@@ -3610,7 +3617,6 @@ button,
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
     grid-auto-flow: row;
-    gap: 41px;
   }
 }
 @media (max-width: 767px) {
@@ -3631,7 +3637,7 @@ button,
   max-width: 100%;
   min-height: 448px;
   background-color: #ffffff;
-  padding: 60px 20px 68px;
+  padding: 62px 20px 66px;
   border: none;
 }
 .subs-card:hover, .subs-card:focus-visible, .subs-card:active {
@@ -3643,13 +3649,13 @@ button,
 }
 @media (max-width: 1199px) {
   .subs-card {
-    padding: 67px 20px 63px;
+    padding: 61px 20px 68px;
   }
 }
 @media (max-width: 767px) {
   .subs-card {
-    height: 384px;
-    padding: 47px 20px 58px;
+    min-height: 384px;
+    padding: 51px 20px 54px;
   }
 }
 
@@ -3689,6 +3695,12 @@ button,
   line-height: 24%;
   -webkit-margin-after: 64px;
           margin-block-end: 64px;
+}
+@media (max-width: 767px) {
+  .subs-card p {
+    -webkit-margin-after: 50px;
+            margin-block-end: 50px;
+  }
 }
 
 .subs-card__price {
@@ -3971,7 +3983,6 @@ button,
 }
 @media (max-width: 1199px) {
   .event p {
-    margin: 0;
     -webkit-margin-before: 4px;
             margin-block-start: 4px;
     font-size: 12px;
@@ -4005,7 +4016,7 @@ button,
 }
 @media (max-width: 1199px) {
   .event img {
-    height: 292px;
+    min-width: 100%;
     -o-object-fit: cover;
        object-fit: cover;
   }
