@@ -5,8 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects</title>
     <link rel="stylesheet" href="./css/style.css">
-    <script src="./js/39.bundle.js"></script>
-    <script src="./js/322.bundle.js"></script>
 </head>
 
 <body class="page__body">
@@ -41,191 +39,207 @@
   
   <h1 class="visually-hidden">Projects page</h1>
   
-  <section class="projects-section projects section page-container">
-    <h2 class="title">Master-bedroom renovation</h2>
+  <main class="main-container">
     
-    <ul class="projects__list">
-      <li class="projects__project-card project-card">
-        
-        <div class="project-card__swiper swiper">
-          <!-- Additional required wrapper -->
-          <div class="swiper-wrapper">
-            <!-- Slides -->
-            <div class="swiper-slide">
-              
-                <div class="before-after__container">
-                  <div class="before-after__image-container">
-                    <div class="before-after__image-before-container">
-                      <img 
-                        class="before-after__image-before before-after__image"
-                        src="./img/projects/renovations/master-bathroom/01/01_done.jpg" 
-                        alt="The before state of object"
-                      >
-                    </div>
-                    <div class="before-after__image-after-container">
-                      <img
-                        class="before-after__image-after before-after__image"
-                        src="./img/projects/renovations/master-bathroom/01/04_done.jpg"
-                        alt="The after state of object"
-                      >
-                    </div>
-                  </div>
-                  <input 
-                    class="before-after__control-slider"
-                    type="range" 
-                    min="0" 
-                    max="100"
-                    value="50"
-                  >
-                  <div class="before-after__control-line"></div>
-                  <div class="before-after__control-button" aria-hidden="true">
-                    <!-- <svg 
-                      xmlns="http://www.w3.org/2000/svg" 
-                      width="32" 
-                      height="32" 
-                      fill="currentColor" 
-                      viewBox="0 0 256 256">
-                      <path d="M136,40V216a8,8,0,0,1-16,0V40a8,8,0,0,1,16,0ZM96,120H35.31l18.35-18.34A8,8,0,0,0,42.34,90.34l-32,32a8,8,0,0,0,0,11.32l32,32a8,8,0,0,0,11.32-11.32L35.31,136H96a8,8,0,0,0,0-16Zm149.66,2.34-32-32a8,8,0,0,0-11.32,11.32L220.69,120H160a8,8,0,0,0,0,16h60.69l-18.35,18.34a8,8,0,0,0,11.32,11.32l32-32A8,8,0,0,0,245.66,122.34Z"></path>
-                    </svg> -->
-                    <svg 
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 256 256"
-                      fill="none" 
-                      stroke="currentColor" 
-                      stroke-linecap="round" 
-                      stroke-linejoin="round" 
-                      stroke-width="24">
-                      <!-- <rect width="256" height="256" fill="none"/> -->
-                      <line x1="128" y1="40" x2="128" y2="216"/>
-                      <line x1="88" y1="128" x2="8" y2="128"/>
-                      <polyline points="42 160 10 128 42 96"/>
-                      <line x1="168" y1="128" x2="248" y2="128"/>
-                      <polyline points="216 96 248 128 216 160"/>
-                    </svg>
-                  </div>
-                </div>
-              
-            </div>
-            <div class="swiper-slide">
-                <img src="./img/projects/renovations/master-bathroom/01/01_done.jpg" alt="">
-            </div>
-            <div class="swiper-slide">
-              <img src="./img/projects/renovations/master-bathroom/01/02_done.jpg" alt="">
-            </div>
-            <div class="swiper-slide">
-              <img src="./img/projects/renovations/master-bathroom/01/03_done.jpg" alt="">
-            </div>
-            <div class="swiper-slide">
-              <img src="./img/projects/renovations/master-bathroom/01/04_done.jpg" alt="">
-            </div>
+    <template class="experiment section page-container">
+      <h2 class="title">Experiment on Before / After</h2>
+
+      <div class="experiment__container">
+        <!-- <div class="experiment__images-container"> -->
+          <img class="experiment__after-image experiment__image" src="./img/projects/renovations/master-bathroom/01/04_done.jpg"></img>
+          <div class="experiment__before-image-container">
+            <img class="experiment__before-image" src="./img/projects/renovations/master-bathroom/01/01_done.jpg"></img>
           </div>
-          <!-- If we need pagination -->
-          <div class="swiper-pagination"></div>
-          <!-- If we need navigation buttons -->
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
+          <input class="experiment__input" type="range" name="" id="">
         </div>
+        
+        <div class="experiment__container">
+          <!-- <div class="experiment__images-container"> -->
+            <img class="experiment__after-image experiment__image" src="./img/projects/renovations/master-bathroom/03/09_done.jpg"></img>
+            <div class="experiment__before-image-container">
+              <img class="experiment__before-image" src="./img/projects/renovations/master-bathroom/03/12_done.jpg"></img>
+            </div>
+          <input class="experiment__input" type="range" name="" id="">
+        </div>
+      </template>
 
-        <button class="swiper__see-before-after-button button" disabled>Before / after display</button>
-        <button class="swiper__see-more-button button">See more slides for more details</button>
-                  
-      </li>
-      <li class="projects__project-card project-card">
-
-        <div class="project-card__swiper swiper">
-          <!-- Additional required wrapper -->
-          <div class="swiper-wrapper">
-            <!-- Slides -->
-            <div class="swiper-slide">
-              
-              <div class="before-after__container">
-                <div class="before-after__image-container">
-                  <div class="before-after__image-before-container">
-                    <img 
-                      class="before-after__image-before before-after__image"
-                      src="./img/projects/renovations/master-bathroom/03/09_done.jpg" 
-                      alt="The before state of object"
-                    >
+    <section class="projects-section projects section page-container">
+      <h2 class="title">Master-bedroom renovation</h2>
+      
+      <ul class="projects__list">
+        <li class="projects__project-card project-card">
+          
+          <div class="project-card__swiper swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                
+                  <div class="before-after__container">
+                    <div class="before-after__image-container">
+                        <img 
+                          class="before-after__image"
+                          src="./img/projects/renovations/master-bathroom/03/12_done.jpg" 
+                          alt="The before state of object"
+                        >
+                        <div class="before-after__before-image-container">
+                          <img
+                            class="befort-after__before-image"
+                            src="./img/projects/renovations/master-bathroom/03/09_done.jpg"
+                            alt="The after state of object"
+                          >
+                        </div>
+                        <input 
+                          class="before-after__control-slider"
+                          type="range" 
+                          min="0" 
+                          max="100"
+                          value="50"
+                        >
+                        <div class="before-after__control-line"></div>
+                        <div class="before-after__control-button" aria-hidden="true">
+                          <!-- <svg 
+                            xmlns="http://www.w3.org/2000/svg" 
+                            width="32" 
+                            height="32" 
+                            fill="currentColor" 
+                            viewBox="0 0 256 256">
+                            <path d="M136,40V216a8,8,0,0,1-16,0V40a8,8,0,0,1,16,0ZM96,120H35.31l18.35-18.34A8,8,0,0,0,42.34,90.34l-32,32a8,8,0,0,0,0,11.32l32,32a8,8,0,0,0,11.32-11.32L35.31,136H96a8,8,0,0,0,0-16Zm149.66,2.34-32-32a8,8,0,0,0-11.32,11.32L220.69,120H160a8,8,0,0,0,0,16h60.69l-18.35,18.34a8,8,0,0,0,11.32,11.32l32-32A8,8,0,0,0,245.66,122.34Z"></path>
+                          </svg> -->
+                          <svg 
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 256 256"
+                            fill="none" 
+                            stroke="currentColor" 
+                            stroke-linecap="round" 
+                            stroke-linejoin="round" 
+                            stroke-width="24">
+                            <!-- <rect width="256" height="256" fill="none"/> -->
+                            <line x1="128" y1="40" x2="128" y2="216"/>
+                            <line x1="88" y1="128" x2="8" y2="128"/>
+                            <polyline points="42 160 10 128 42 96"/>
+                            <line x1="168" y1="128" x2="248" y2="128"/>
+                            <polyline points="216 96 248 128 216 160"/>
+                          </svg>
+                        </div>
+                    </div>
                   </div>
-                  <div class="before-after__image-after-container">
-                    <img
-                      class="before-after__image-after before-after__image"
-                      src="./img/projects/renovations/master-bathroom/03/12_done.jpg"
-                      alt="The after state of object"
-                    >
-                  </div>
-                </div>
-                <input 
-                  class="before-after__control-slider"
-                  type="range" 
-                  min="0" 
-                  max="100"
-                  value="50"
-                >
-                <div class="before-after__control-line"></div>
-                <div class="before-after__control-button" aria-hidden="true">
-                  <!-- <svg 
-                    xmlns="http://www.w3.org/2000/svg" 
-                    width="32" 
-                    height="32" 
-                    fill="currentColor" 
-                    viewBox="0 0 256 256">
-                    <path d="M136,40V216a8,8,0,0,1-16,0V40a8,8,0,0,1,16,0ZM96,120H35.31l18.35-18.34A8,8,0,0,0,42.34,90.34l-32,32a8,8,0,0,0,0,11.32l32,32a8,8,0,0,0,11.32-11.32L35.31,136H96a8,8,0,0,0,0-16Zm149.66,2.34-32-32a8,8,0,0,0-11.32,11.32L220.69,120H160a8,8,0,0,0,0,16h60.69l-18.35,18.34a8,8,0,0,0,11.32,11.32l32-32A8,8,0,0,0,245.66,122.34Z"></path>
-                  </svg> -->
-                  <svg 
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 256 256"
-                    fill="none" 
-                    stroke="currentColor" 
-                    stroke-linecap="round" 
-                    stroke-linejoin="round" 
-                    stroke-width="24">
-                    <!-- <rect width="256" height="256" fill="none"/> -->
-                    <line x1="128" y1="40" x2="128" y2="216"/>
-                    <line x1="88" y1="128" x2="8" y2="128"/>
-                    <polyline points="42 160 10 128 42 96"/>
-                    <line x1="168" y1="128" x2="248" y2="128"/>
-                    <polyline points="216 96 248 128 216 160"/>
-                  </svg>
-                </div>
+                
               </div>
-            
+              <div class="swiper-slide">
+                  <img src="./img/projects/renovations/master-bathroom/03/09_done.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="./img/projects/renovations/master-bathroom/03/10_done.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="./img/projects/renovations/master-bathroom/03/11_done.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="./img/projects/renovations/master-bathroom/03/12_done.jpg" alt="">
+              </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
           </div>
-
-
-
-
-            <div class="swiper-slide">
-                <img src="./img/projects/renovations/master-bathroom/03/09_done.jpg" alt="">
+  
+          <button class="swiper__see-before-after-button button" disabled>Before / after display</button>
+          <button class="swiper__see-more-button button">See more slides for more details</button>
+                    
+        </li>
+        <li class="projects__project-card project-card">
+          
+          <div class="project-card__swiper swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                
+                  <div class="before-after__container">
+                    <div class="before-after__image-container">
+                        <img 
+                          class="before-after__image"
+                          src="./img/projects/renovations/master-bathroom/01/04_done.jpg" 
+                          alt="The before state of object"
+                        >
+                        <div class="before-after__before-image-container">
+                          <img
+                            class="befort-after__before-image"
+                            src="./img/projects/renovations/master-bathroom/01/01_done.jpg"
+                            alt="The after state of object"
+                          >
+                        </div>
+                        <input 
+                          class="before-after__control-slider"
+                          type="range" 
+                          min="0" 
+                          max="100"
+                          value="50"
+                        >
+                        <div class="before-after__control-line"></div>
+                        <div class="before-after__control-button" aria-hidden="true">
+                          <!-- <svg 
+                            xmlns="http://www.w3.org/2000/svg" 
+                            width="32" 
+                            height="32" 
+                            fill="currentColor" 
+                            viewBox="0 0 256 256">
+                            <path d="M136,40V216a8,8,0,0,1-16,0V40a8,8,0,0,1,16,0ZM96,120H35.31l18.35-18.34A8,8,0,0,0,42.34,90.34l-32,32a8,8,0,0,0,0,11.32l32,32a8,8,0,0,0,11.32-11.32L35.31,136H96a8,8,0,0,0,0-16Zm149.66,2.34-32-32a8,8,0,0,0-11.32,11.32L220.69,120H160a8,8,0,0,0,0,16h60.69l-18.35,18.34a8,8,0,0,0,11.32,11.32l32-32A8,8,0,0,0,245.66,122.34Z"></path>
+                          </svg> -->
+                          <svg 
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 256 256"
+                            fill="none" 
+                            stroke="currentColor" 
+                            stroke-linecap="round" 
+                            stroke-linejoin="round" 
+                            stroke-width="24">
+                            <!-- <rect width="256" height="256" fill="none"/> -->
+                            <line x1="128" y1="40" x2="128" y2="216"/>
+                            <line x1="88" y1="128" x2="8" y2="128"/>
+                            <polyline points="42 160 10 128 42 96"/>
+                            <line x1="168" y1="128" x2="248" y2="128"/>
+                            <polyline points="216 96 248 128 216 160"/>
+                          </svg>
+                        </div>
+                    </div>
+                  </div>
+                
+              </div>
+              <div class="swiper-slide">
+                  <img src="./img/projects/renovations/master-bathroom/01/01_done.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="./img/projects/renovations/master-bathroom/01/02_done.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="./img/projects/renovations/master-bathroom/01/03_done.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="./img/projects/renovations/master-bathroom/01/04_done.jpg" alt="">
+              </div>
             </div>
-            <div class="swiper-slide">
-              <img src="./img/projects/renovations/master-bathroom/03/10_done.jpg" alt="">
-            </div>
-            <div class="swiper-slide">
-              <img src="./img/projects/renovations/master-bathroom/03/11_done.jpg" alt="">
-            </div>
-            <div class="swiper-slide">
-              <img src="./img/projects/renovations/master-bathroom/03/12_done.jpg" alt="">
-            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
           </div>
-
-          <!-- If we need pagination -->
-          <div class="swiper-pagination"></div>
-        
-          <!-- If we need navigation buttons -->
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
-        </div>
-
-        <button class="swiper__see-before-after-button button" disabled>Before/after display</button>
-        <button class="swiper__see-more-button button">See more slides for more details</button>
-
-      </li>
-    </ul>
-
+  
+          <button class="swiper__see-before-after-button button" disabled>Before / after display</button>
+          <button class="swiper__see-more-button button">See more slides for more details</button>
+                    
+        </li>
+      </ul>
+  
     </section>
 
-    <footer class="page__footer main-footer">
+  </main>
+
+  <footer class="page__footer main-footer">
     <div class="main-footer page-container">
       <div class="main-footer__section-container">
         <div class="main-footer__logo-container logo logo--footer">
@@ -236,16 +250,16 @@
             <ul class="footer-nav" role="list">
               <div class="footer-nav__site-list">
                 <li class="footer-nav__item">
-                  <a href="" class="nav-link">home</a>
+                  <a href="index.html" class="nav-link">home</a>
                 </li>
                 <li class="footer-nav__item">
-                  <a href="" class="nav-link">services</a>
+                  <a href="services.html" class="nav-link">services</a>
                 </li>
                 <li class="footer-nav__item">
-                  <a href="" class="nav-link">projects</a>
+                  <a href="projects.html" class="nav-link">projects</a>
                 </li>
                 <li class="footer-nav__item">
-                  <a href="" class="nav-link">contact us</a>
+                  <a href="index.html#index-contacts" class="nav-link">contact us</a>
                 </li>
               </div>
               <div class="footer-nav__adress">
@@ -265,9 +279,12 @@
       </div>
     </div>
   </footer>
+  <script src="./js/39.bundle.js" defer></script>
+  <script src="./js/322.bundle.js" defer></script>
 
 
-    <script src="./js/projects.bundle.js"></script>
+
+  <script src="./js/projects.bundle.js"></script>
 
 </body>
 </html>

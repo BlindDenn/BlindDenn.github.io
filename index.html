@@ -5,8 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Main page</title>
     <link rel="stylesheet" href="./css/style.css">
-    <script src="./js/39.bundle.js"></script>
-    <script src="./js/322.bundle.js"></script>
 </head>
 
 <body class="page__body">
@@ -41,12 +39,42 @@
 
     <!-- <input type="text" id="dp"> -->
 
-    <main class="main-container">
+    <main class="main-container main-container--index">
 
         <h1 class="visually-hidden">Elite General Contracting - leader in residential renovation in capitol area.</h1>
   
-        <section class="section-hero section page-container">
-          <h2 class="title">Meet Elite General Contracting</h2>
+        <section class="section-hero section">
+          <h2 class="title visually-hidden">Meet Elite General Contracting</h2>
+
+          <div class="section-hero__swiper swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide swiper-slide--video" data-swiper-autoplay="9000">
+                <video src="./img/video/file.mp4" autoplay muted>
+                <!-- <video src="./img/video/file.mp4" autoplay poster="posterimage.jpg"> -->
+                  <!-- Sorry, your browser doesn't support embedded videos, but don't worry, you can
+                  <a href="videofile.ogg">download it</a>
+                  and watch it with your favorite video player! -->
+                </video>
+              </div>
+              <div class="swiper-slide slide-map" data-swiper-autoplay="8000">
+                <div class="section-hero inslide-text-animation">
+                  <p class="anim-test animated" data-delay="0">Servicing:</p>
+                  <p class="anim-test animated" data-delay="1000">Rockville,</p>
+                  <p class="anim-test animated" data-delay="2000">Bethesda, Kensington,</p>
+                  <p class="anim-test animated" data-delay="3000">Chevy Chase, North Bethesda,</p>
+                  <p class="anim-test animated" data-delay="4000">Potomac</p>
+                  <p class="anim-test animated" data-delay="5000">and Washington, DC</p>
+                </div>
+
+              </div>
+              <div class="swiper-slide">Slide 3</div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+          </div>
+
         </section>
         
         <section class="sf-form-section section page-container">
@@ -230,8 +258,8 @@
 
   </section>
 
-  
-        <section class="contacts-section section page-container">
+          
+        <section class="contacts-section section page-container" id="index-contacts">
           <h2 class="title">Contact Us 24/7</h2>
           <ul class="contacts-section__list" role="list">
             <li class="contacts-section__item">
@@ -271,16 +299,16 @@
             <ul class="footer-nav" role="list">
               <div class="footer-nav__site-list">
                 <li class="footer-nav__item">
-                  <a href="" class="nav-link">home</a>
+                  <a href="index.html" class="nav-link">home</a>
                 </li>
                 <li class="footer-nav__item">
-                  <a href="" class="nav-link">services</a>
+                  <a href="services.html" class="nav-link">services</a>
                 </li>
                 <li class="footer-nav__item">
-                  <a href="" class="nav-link">projects</a>
+                  <a href="projects.html" class="nav-link">projects</a>
                 </li>
                 <li class="footer-nav__item">
-                  <a href="" class="nav-link">contact us</a>
+                  <a href="index.html#index-contacts" class="nav-link">contact us</a>
                 </li>
               </div>
               <div class="footer-nav__adress">
@@ -300,6 +328,9 @@
       </div>
     </div>
   </footer>
+  <script src="./js/39.bundle.js" defer></script>
+  <script src="./js/322.bundle.js" defer></script>
+
 
 
     <script src="./js/index.bundle.js" type="module"></script>
