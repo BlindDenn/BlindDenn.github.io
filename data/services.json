@@ -1,0 +1,92 @@
+[
+    {
+        "group": "Building",
+        "title": "Additions and Gardens",
+        "image": "./img/services/additions-and-garages.jpg",
+        "pages": {
+            "index": true,
+            "all-items": true
+        }
+    },
+    {
+        "group": "Design and Engeneering",
+        "title": "Investment Renovation",
+        "image": "./img/services/investment-renovations.png",
+        "pages": {
+            "index": true,
+            "all-items": true
+        }
+    },
+    {
+        "group": "Remodeling and Renovation",
+        "title": "Basement Remodeling",
+        "image": "./img/services/basement-remodeling.png",
+        "pages": {
+            "index": true,
+            "all-items": true
+        }
+    },
+    {
+        "group": "Remodeling and Renovation",
+        "title": "Kitchen Remodeling",
+        "image": null,
+        "pages": {
+            "index": true,
+            "all-items": true
+        }
+    },
+    {
+        "group": "Remodeling and Renovation",
+        "title": "Bathroom Remodeling",
+        "image": null,
+        "pages": {
+            "index": true,
+            "all-items": true
+        }
+    },
+    {
+        "group": "Remodeling and Renovation",
+        "title": "Attic Remodeling",
+        "image": null,
+        "pages": {
+            "index": true,
+            "all-items": true
+        }
+    },
+    {
+        "group": "Building",
+        "title": "Porch Building",
+        "image": null,
+        "pages": {
+            "index": true,
+            "all-items": true
+        }
+    },
+    {
+        "group": "Building",
+        "title": "Deck Building",
+        "image": null,
+        "pages": {
+            "index": true,
+            "all-items": true
+        }
+    },
+    {
+        "group": "Building",
+        "title": "Fence Building",
+        "image": null,
+        "pages": {
+            "index": true,
+            "all-items": true
+        }
+    },
+    {
+        "group": "Building",
+        "title": "Roofing",
+        "image": null,
+        "pages": {
+            "index": true,
+            "all-items": true
+        }
+    }
+]
